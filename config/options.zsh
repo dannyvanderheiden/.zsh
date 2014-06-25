@@ -23,6 +23,10 @@ unsetopt auto_name_dirs
 # Use own prompt
 setopt prompt_subst
 
+# Prompt
+PROMPT='$(~/.zsh/script/prompt $?)'
+RPROMPT='$(___rvm_prompt)'
+
 # History
 HISTFILE=~/.histfile
 HISTSIZE=2000
