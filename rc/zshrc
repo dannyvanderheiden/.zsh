@@ -1,3 +1,6 @@
+# Define project parent directories to create aliases
+PROJECT_PARENT_DIRS=()
+
 # Load sources
 source $HOME/.zsh/config/colors.zsh
 source $HOME/.zsh/config/general.zsh
