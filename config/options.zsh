@@ -22,3 +22,10 @@ setopt hist_ignore_all_dups
 unsetopt auto_name_dirs
 # Use own prompt
 setopt prompt_subst
+
+# History
+HISTFILE=~/.histfile
+HISTSIZE=2000
+SAVEHIST=2000
+# Ignore commands in history
+export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr"
