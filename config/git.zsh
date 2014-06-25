@@ -33,3 +33,28 @@ alias dc='git diff --cached'
 
 alias f='git fetch'
 alias fetch='git fetch'
+
+
+# Functions
+###########
+
+function github-init () {
+  git config branch.$(git-branch-name).remote origin
+  git config branch.$(git-branch-name).merge refs/heads/$(git-branch-name)
+}
+
+# Retrieve GitHub URL
+function github-url () {
+  git config remote.origin.url | sed -En 's/git(@|:\/\/)github.com(:|\/)(.+)\/(.+).git/https:\/\/github.com\/\3\/\4/p'
+}
+
+# Visit GitHub URL
+function github-go () {
+  open $(github-url)
+}
+
+unstage() {
+  git reset HEAD -- $*
+  echo
+  git status
+}
