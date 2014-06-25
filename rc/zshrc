@@ -11,3 +11,4 @@ source $HOME/.zsh/config/options.zsh
 source $HOME/.zsh/config/completion.zsh
 source $HOME/.zsh/config/title.zsh
 source $HOME/.zsh/config/git.zsh
+source $HOME/.zsh/config/ruby.zsh
