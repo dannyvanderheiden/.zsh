@@ -55,3 +55,21 @@ export EDITOR=vim
 export VISUAL=mvim
 export GIT_EDITOR=vim
 export SVN_EDITOR=vim
+
+
+# Functions
+###########
+
+# Grep process
+function psg {
+  FIRST=`echo $1 | sed -e 's/^\(.\).*/\1/'`
+  REST=`echo $1 | sed -e 's/^.\(.*\)/\1/'`
+  ps aux | grep "[$FIRST]$REST"
+}
+
+# Edit hosts-file
+if [ "`id -u`" -eq 0 ]; then
+  alias hosts="mvim /etc/hosts"
+else
+  alias hosts="sudo mvim /etc/hosts"
+fi
