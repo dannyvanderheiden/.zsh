@@ -34,6 +34,9 @@ alias dc='git diff --cached'
 alias f='git fetch'
 alias fetch='git fetch'
 
+alias home_config='git config user.email "$GIT_USER_HOME_EMAIL"'
+alias work_config='git config user.email "$GIT_USER_WORK_EMAIL"'
+
 
 # Functions
 ###########
