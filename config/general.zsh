@@ -32,3 +32,26 @@ for PARENT_DIR in ${PROJECT_PARENT_DIRS[@]} ; do
     done
   fi
 done
+
+
+# Settings
+##########
+
+# Locales
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Paths
+export PATH="/usr/local/bin:$PATH"
+if [[ -d "$HOME/.rvm/bin" ]]; then
+  export PATH=$PATH:$HOME/.rvm/bin
+fi
+if [[ -d "/usr/local/sbin" ]]; then
+  export PATH=$PATH:/usr/local/sbin
+fi
+
+# Editor
+export EDITOR=vim
+export VISUAL=mvim
+export GIT_EDITOR=vim
+export SVN_EDITOR=vim
