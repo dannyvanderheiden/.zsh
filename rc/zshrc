@@ -1,6 +1,11 @@
 # Define project parent directories to create aliases
 PROJECT_PARENT_DIRS=()
 
+# Load personal settings
+if [[ -f $HOME/.zsh/config/personal.zsh ]]; then
+  source $HOME/.zsh/config/personal.zsh
+fi
+
 # Load sources
 source $HOME/.zsh/config/colors.zsh
 source $HOME/.zsh/config/general.zsh
