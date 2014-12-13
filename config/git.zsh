@@ -74,3 +74,8 @@ function config_mode {
 
   echo $blue$current_mode$reset
 }
+
+# Reset commit dates to original dates after a rebase/reword
+function reset_date {
+  git rebase `echo $1` --committer-date-is-author-date
+}
