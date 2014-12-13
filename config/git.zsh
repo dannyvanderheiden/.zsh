@@ -61,3 +61,16 @@ unstage() {
   echo
   git status
 }
+
+# Retrieve the current config mode (Home or Work)
+function config_mode {
+  user_email=$(git config user.email)
+
+  if [[ "$user_email" == "$GIT_USER_HOME_EMAIL" ]]; then
+    current_mode="Home"
+  else
+    current_mode="Work"
+  fi
+
+  echo $blue$current_mode$reset
+}
