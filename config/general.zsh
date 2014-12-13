@@ -20,6 +20,9 @@ alias t="tmux -u"
 # Colors in less
 alias less='less -R'
 
+# Coverage
+alias cov='open coverage/index.html'
+
 # Create project aliases by defining project root directories
 for PARENT_DIR in ${PROJECT_PARENT_DIRS[@]} ; do
   if [ -d "$PARENT_DIR" ]; then
