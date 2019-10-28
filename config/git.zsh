@@ -3,6 +3,8 @@
 
 alias cdb='base=$(git rev-parse --show-cdup) && cd $base'
 
+alias clb='git branch --merged | egrep -v "(^\*|master|staging)" | xargs git branch -d'
+
 alias upstash='git stash && git pull --ff-only && git stash pop'
 
 alias push='git push'
