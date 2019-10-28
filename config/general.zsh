@@ -10,6 +10,7 @@ alias tf='tail -f -n 100'
 
 # VIM
 alias m='mvim --remote-silent'
+alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
 
 # Directories
 alias downloads="cd $HOME/Downloads"
