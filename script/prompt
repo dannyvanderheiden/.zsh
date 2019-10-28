@@ -93,6 +93,7 @@ function git_prompt {
   basedir=$(git rev-parse --show-cdup)
   basedir
   time_since_last_commit
+  config_mode
   branch
   in_rebase
   merge
@@ -163,6 +164,12 @@ function merge {
     space
     append "↕"
   fi
+}
+
+function config_mode {
+  space
+  append $blue
+  append $current_config_mode
 }
 
 function subdir {

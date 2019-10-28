@@ -67,13 +67,15 @@ function config_mode {
   user_email=$(git config user.email)
 
   if [[ "$user_email" == "$GIT_USER_HOME_EMAIL" ]]; then
-    current_mode="Home"
+    current_mode="home"
   else
-    current_mode="Work"
+    current_mode="work"
   fi
 
-  echo $blue$current_mode$reset
+  echo $current_mode
 }
+
+export current_config_mode=$(config_mode)
 
 # Reset commit dates to original dates after a rebase/reword
 function reset_date {

@@ -25,7 +25,7 @@ setopt prompt_subst
 
 # Prompt
 PROMPT='$(~/.zsh/script/prompt $?)'
-RPROMPT='$(___rvm_prompt)-[$(config_mode)]'
+RPROMPT=''
 
 # History
 HISTFILE=~/.histfile
