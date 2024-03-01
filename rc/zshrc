@@ -7,6 +7,7 @@ if [[ -f $HOME/.zsh/config/personal.zsh ]]; then
 fi
 
 # Load sources
+source $HOME/.zsh/config/brew.zsh
 source $HOME/.zsh/config/colors.zsh
 source $HOME/.zsh/config/general.zsh
 source $HOME/.zsh/config/modules.zsh
@@ -16,5 +17,5 @@ source $HOME/.zsh/config/options.zsh
 source $HOME/.zsh/config/completion.zsh
 source $HOME/.zsh/config/title.zsh
 source $HOME/.zsh/config/git.zsh
-source $HOME/.zsh/config/rbenv.zsh
 source $HOME/.zsh/config/ruby.zsh
+source $HOME/.zsh/config/rbenv.zsh
