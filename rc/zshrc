@@ -12,7 +12,6 @@ source $HOME/.zsh/config/colors.zsh
 source $HOME/.zsh/config/general.zsh
 source $HOME/.zsh/config/modules.zsh
 source $HOME/.zsh/config/bindings.zsh
-source $HOME/.zsh/config/rvm.zsh
 source $HOME/.zsh/config/options.zsh
 source $HOME/.zsh/config/completion.zsh
 source $HOME/.zsh/config/title.zsh
