@@ -33,3 +33,5 @@ HISTSIZE=2000
 SAVEHIST=2000
 # Ignore commands in history
 export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr"
+
+ulimit -Sn 10240
