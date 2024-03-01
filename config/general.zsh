@@ -77,3 +77,5 @@ if [ "`id -u`" -eq 0 ]; then
 else
   alias hosts="sudo mvim /etc/hosts"
 fi
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
