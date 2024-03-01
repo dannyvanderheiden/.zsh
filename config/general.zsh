@@ -46,7 +46,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Paths
-export PATH="/usr/local/bin:$PATH"
+export PATH="/sbin:$PATH"
 if [[ -d "$HOME/.rvm/bin" ]]; then
   export PATH=$PATH:$HOME/.rvm/bin
 fi
